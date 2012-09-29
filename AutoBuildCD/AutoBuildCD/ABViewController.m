@@ -26,4 +26,9 @@
     // Dispose of any resources that can be recreated.
 }
 
+#pragma mark - Button Action
+-( IBAction) showAlert:(id)sender
+{
+}
+
 @end
