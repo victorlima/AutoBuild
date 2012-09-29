@@ -1,7 +1,11 @@
 #!/bin/sh
 #
+# These are links that helped me understand the direction I should follow regarding unit tests setup
+# in iOS. Be sure to read them closely.
+# ----
 # http://baolei.tumblr.com/post/32428168156/ios-unit-test-from-command-line-ios6-xcode4-5
 # http://longweekendmobile.com/2011/04/17/xcode4-running-application-tests-from-the-command-line-in-ios/
+# http://www.gerardcondon.com/blog/2012/09/20/further-jenkins-setup-code-signing/
 
 PROJECT_HOME=`pwd`
 PROJECT_PATH=./AutoBuildCD

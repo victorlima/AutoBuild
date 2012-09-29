@@ -1,4 +1,4 @@
 AutoBuild
 =========
 
-Continuos Delivery with iOS
+Continuous Delivery with iOS
