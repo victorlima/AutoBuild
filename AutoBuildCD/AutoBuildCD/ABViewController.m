@@ -29,6 +29,14 @@
 #pragma mark - Button Action
 -( IBAction) showAlert:(id)sender
 {
+  UIAlertView* alert = [[UIAlertView alloc] initWithTitle: @"Bem vindo"
+                                                  message: @"Sejam bem vindos"
+                                                 delegate: nil
+                                        cancelButtonTitle: @"Ok"
+                                        otherButtonTitles: nil];
+  
+  [alert show];
 }
+
 
 @end
