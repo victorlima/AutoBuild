@@ -24,6 +24,6 @@ killall -m -KILL "iPhone Simulator"
 xcodebuild  -project ${PROJECT_PATH}/${PROJECT_NAME}.xcodeproj \
 			-target ${TEST_TARGET} \
 			-configuration Debug \
-			-sdk iphonesimulator5.1 \
+			-sdk iphonesimulator \
 				clean build \
 				TEST_AFTER_BUILD=YES
