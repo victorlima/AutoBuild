@@ -24,6 +24,7 @@
 		D95DE1B316177B81005E11EC /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = D95DE1B116177B81005E11EC /* InfoPlist.strings */; };
 		D95DE1B616177B81005E11EC /* AutoBuildCDTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D95DE1B516177B81005E11EC /* AutoBuildCDTests.m */; };
 		D95DE1C116178027005E11EC /* ABViewControllerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D95DE1C016178027005E11EC /* ABViewControllerTests.m */; };
+		D95DE1C316179746005E11EC /* libOCMock.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D95DE1C216179746005E11EC /* libOCMock.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,6 +62,7 @@
 		D95DE1B516177B81005E11EC /* AutoBuildCDTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AutoBuildCDTests.m; sourceTree = "<group>"; };
 		D95DE1BF16178027005E11EC /* ABViewControllerTests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ABViewControllerTests.h; sourceTree = "<group>"; };
 		D95DE1C016178027005E11EC /* ABViewControllerTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ABViewControllerTests.m; sourceTree = "<group>"; };
+		D95DE1C216179746005E11EC /* libOCMock.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libOCMock.a; path = ../libs/ocmock/Examples/iOS5Example/usr/lib/libOCMock.a; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,6 +80,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D95DE1C316179746005E11EC /* libOCMock.a in Frameworks */,
 				D95DE1A916177B81005E11EC /* SenTestingKit.framework in Frameworks */,
 				D95DE1AA16177B81005E11EC /* UIKit.framework in Frameworks */,
 				D95DE1AB16177B81005E11EC /* Foundation.framework in Frameworks */,
@@ -90,6 +93,7 @@
 		D95DE17516177B80005E11EC = {
 			isa = PBXGroup;
 			children = (
+				D95DE1C216179746005E11EC /* libOCMock.a */,
 				D95DE18A16177B80005E11EC /* AutoBuildCD */,
 				D95DE1AE16177B81005E11EC /* AutoBuildCDTests */,
 				D95DE18316177B80005E11EC /* Frameworks */,
@@ -410,7 +414,13 @@
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "AutoBuildCD/AutoBuildCD-Prefix.pch";
+				HEADER_SEARCH_PATHS = "$(SRCROOT)/../libs/ocmock/Examples/iOS5Example/usr/include/";
 				INFOPLIST_FILE = "AutoBuildCDTests/AutoBuildCDTests-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/../libs/ocmock/Examples/iOS5Example/usr/lib\"",
+				);
+				OTHER_LDFLAGS = "-ObjC";
 				OTHER_TEST_FLAGS = "-RegisterForSystemEvents";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_AFTER_BUILD = YES;
@@ -429,7 +439,13 @@
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "AutoBuildCD/AutoBuildCD-Prefix.pch";
+				HEADER_SEARCH_PATHS = "$(SRCROOT)/../libs/ocmock/Examples/iOS5Example/usr/include/";
 				INFOPLIST_FILE = "AutoBuildCDTests/AutoBuildCDTests-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/../libs/ocmock/Examples/iOS5Example/usr/lib\"",
+				);
+				OTHER_LDFLAGS = "-ObjC";
 				OTHER_TEST_FLAGS = "-RegisterForSystemEvents";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_AFTER_BUILD = YES;

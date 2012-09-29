@@ -1,6 +1,7 @@
 # Xcode
 build/*
 builds/*
+**/.DS_Store
 AutoBuildCD/build/*
 *.pbxuser
 !default.pbxuser

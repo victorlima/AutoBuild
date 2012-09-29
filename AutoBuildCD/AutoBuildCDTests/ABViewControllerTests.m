@@ -8,6 +8,8 @@
 
 #import "ABViewControllerTests.h"
 
+#import <OCMock/OCMock.h>
+
 @implementation ABViewControllerTests
 
 -( void ) test_subviews_count
@@ -16,4 +18,9 @@
   STAssertTrue( [abvc.view.subviews count] == 0, @"" );
 }
 
+-( void ) test_ocmock
+{
+  id mock = [OCMockObject mockForClass:[NSObject class]];
+  STAssertNotNil( mock, @"" );
+}
 @end
