@@ -93,7 +93,6 @@
 		D95DE17516177B80005E11EC = {
 			isa = PBXGroup;
 			children = (
-				D95DE1C216179746005E11EC /* libOCMock.a */,
 				D95DE18A16177B80005E11EC /* AutoBuildCD */,
 				D95DE1AE16177B81005E11EC /* AutoBuildCDTests */,
 				D95DE18316177B80005E11EC /* Frameworks */,
@@ -113,6 +112,7 @@
 		D95DE18316177B80005E11EC /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				D95DE1C216179746005E11EC /* libOCMock.a */,
 				D95DE18416177B80005E11EC /* UIKit.framework */,
 				D95DE18616177B80005E11EC /* Foundation.framework */,
 				D95DE18816177B80005E11EC /* CoreGraphics.framework */,
