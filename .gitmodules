@@ -1,0 +1,3 @@
+[submodule "libs/ocmock"]
+	path = libs/ocmock
+	url = git@github.com:erikdoe/ocmock
