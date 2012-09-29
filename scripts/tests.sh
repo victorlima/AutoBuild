@@ -13,8 +13,10 @@ SYMROOT=../builds
 
 echo "[#] - Testing project"
 echo "-------------------------------------------------------------"
+killall -m -KILL "iPhone Simulator"
 xcodebuild  -project ${PROJECT_PATH}/${PROJECT_NAME}.xcodeproj \
-		    -target ${TEST_TARGET} \
+			-scheme ${TEST_TARGET} \
 			-configuration Debug \
-			-sdk iphonesimulator \
-				clean build 
+			-sdk iphonesimulator5.1 \
+				clean build \
+				TEST_AFTER_BUILD=YES
