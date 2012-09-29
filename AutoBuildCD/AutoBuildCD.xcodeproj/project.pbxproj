@@ -385,6 +385,8 @@
 		D95DE1BA16177B81005E11EC /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				GCC_GENERATE_TEST_COVERAGE_FILES = YES;
+				GCC_INSTRUMENT_PROGRAM_FLOW_ARCS = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "AutoBuildCD/AutoBuildCD-Prefix.pch";
 				INFOPLIST_FILE = "AutoBuildCD/AutoBuildCD-Info.plist";

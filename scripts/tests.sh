@@ -18,7 +18,7 @@ echo "[#] - Testing project"
 echo "-------------------------------------------------------------"
 killall -m -KILL "iPhone Simulator"
 xcodebuild  -project ${PROJECT_PATH}/${PROJECT_NAME}.xcodeproj \
-			-scheme ${TEST_TARGET} \
+			-target ${TEST_TARGET} \
 			-configuration Debug \
 			-sdk iphonesimulator5.1 \
 				clean build \
