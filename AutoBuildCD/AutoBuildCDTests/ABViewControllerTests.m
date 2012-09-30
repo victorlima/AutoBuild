@@ -15,7 +15,10 @@
 -( void ) test_subviews_count
 {
   ABViewController* abvc = [[ABViewController alloc] init];
-  STAssertTrue( [abvc.view.subviews count] == 0, @"" );
+  STAssertTrue( [abvc.view.subviews count] == 1, @"" );
+
+  UIView* v = [abvc.view.subviews objectAtIndex:0];
+  STAssertTrue( [v isKindOfClass:[UIButton class]], @"");
 }
 
 -( void ) test_ocmock
